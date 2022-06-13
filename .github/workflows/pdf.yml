@@ -24,13 +24,13 @@ jobs:
       - name: Generate PDF
         uses: misaelnieto/web_to_pdf_action@master
         with:
-          webPageURL: https://domain.com/
+          webPageURL: https://svelte-cv.gushogg-blake.com
           outputFile: ./static/Your Name.pdf
           pdfOptions: '{"margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       
       - name: Commit
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: Your Name
-          author_email: name@domain.com
+          author_name: Gus Hogg-Blake
+          author_email: gus@gushogg-blake.com
           message: 'Action: Update PDF'

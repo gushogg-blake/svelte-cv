@@ -1,0 +1,74 @@
+.tech, .methodologies {
+	margin-top: .4em;
+}
+
+.details {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 1em;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.company {
+	text-transform: uppercase;
+	font-size: 13px;
+	
+	a {
+		text-transform: none;
+	}
+}
+
+.type, .date {
+	text-align: right;
+}
+
+.type {
+	color: var(--faded);
+	font-size: 13px;
+	margin-bottom: 2px;
+}
+
+.date {
+	//color: var(--faded);
+	//text-transform: uppercase;
+	font-size: 13px;
+}
+
+.intro:not(:last-child) {
+	margin-bottom: 1em;
+}
+
+.table {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding: 1px;
+	gap: 1px;
+	//background: #bbbbbb;
+	
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
+	
+	div:nth-child(odd) {
+		color: var(--faded);
+		font-size: 13px;
+	}
+	
+	div {
+		display: flex;
+		align-items: center;
+		padding: 5px 0;
+		padding-right: 1.3em;
+		background: white;
+	}
+	
+	.projectName {
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,36 @@
+name: Generate PDF
+
+on: [push, pull_request]
+
+jobs:
+  html_to_pdf:
+    name: Update PDF
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Wait for deploy
+        run: sleep 2m
+        shell: bash
+      
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Generate PDF
+        uses: misaelnieto/web_to_pdf_action@master
+        with:
+          webPageURL: https://domain.com/
+          outputFile: ./static/Your Name.pdf
+          pdfOptions: '{"margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+      
+      - name: Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Your Name
+          author_email: name@domain.com
+          message: 'Action: Update PDF'

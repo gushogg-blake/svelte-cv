@@ -24,7 +24,7 @@ jobs:
       - name: Generate PDF
         uses: misaelnieto/web_to_pdf_action@master
         with:
-          webPageURL: https://svelte-cv.gushogg-blake.com
+          webPageURL: https://svelte-cv.vercel.app/
           outputFile: ./static/Your Name.pdf
           pdfOptions: '{"margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       

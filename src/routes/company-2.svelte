@@ -2,7 +2,7 @@
 import Main from "./_Main.svelte";
 </script>
 
-<style type="text/scss">
+<style lang="scss">
 @import "./common";
 @import "./details";
 </style>

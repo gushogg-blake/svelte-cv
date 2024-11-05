@@ -254,8 +254,6 @@ a.more {
 			Background
 		</div>
 		Introduce yourself here.
-		<br><br>
-		This is a template for generating a slick one-page PDF CV with an online version. See <a href="//github.com/gushogg-blake/svelte-cv">github.com/gushogg-blake/svelte-cv</a> for more info.
 	</div>
 	<div id="cols">
 		<div>

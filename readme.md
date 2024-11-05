@@ -3,8 +3,6 @@ svelte-cv
 
 Use this repo as a template to create a CV like [this one](//cv.gushogg-blake.com).
 
-The idea is that you can send out a clean, one-page PDF CV where each previous employment listing links to an online version with more detail.
-
 Configuration
 ---
 
